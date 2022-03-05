@@ -4,17 +4,18 @@ from data.__all_models import User, Jobs
 
 global_init('database.db')
 session = create_session()
-"""user = User()
-user.surname = "Scott"
-user.name = "Ridley"
-user.age = 21
-user.position = "captain"
-user.speciality = "research engineer"
-user.address = "module_1"
-user.email = "scott_chief@mars.org"
-user.hashed_password = "cap"
+user = User()
+user.surname = "Boris"
+user.name = "Olegov"
+user.age = 10
+user.position = "child"
+user.speciality = "unemployed"
+user.address = "module_2"
+user.email = "boris_olegov@mars.org"
+user.hashed_password = "mars_is_cool"
 session.add(user)
-session.commit()"""
+session.commit()
+session.close()
 """job = Jobs()
 job = Jobs()
 job.team_leader = 1
