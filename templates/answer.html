@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+
+{% block content%}
+    {% for item in form %}
+        <h4> {{ item }}: {{ form[item] }} <br></h4>
+    {% endfor %}
+{% endblock %}
