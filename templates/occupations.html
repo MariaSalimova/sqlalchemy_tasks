@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block content%}
+{% block content %}
     <h2>Список профессий</h2>
     <{{ list_type }}>
-        {% for prof in occupations %}
+        {% for prof in list_prof %}
             <li>{{ prof }}</li>
         {% endfor %}
     </{{ list_type }}>
